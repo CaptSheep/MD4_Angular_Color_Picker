@@ -1,0 +1,11 @@
+<h1>Color Picker</h1>
+<label>  Change Color </label>
+<br>
+<label>Color Red</label>
+<p><input type="range" min="0" max="255" [(ngModel)]="colorRed"></p>
+<label>Color Green</label>
+<p><input type="range" min="0" max="255" [(ngModel)]="colorGreen"> </p>
+<label>Color Blue</label>
+<p><input type="range" min="0" max="255" [(ngModel)]="colorBlue"></p>
+
+<h1 [style.color]="changeColor()">This is a paragraph</h1>
